@@ -1,13 +1,64 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter Tight', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #cc2473, #d828c9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 500px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.input-with-icon-div{
+  display: flex;
+}
+
+.custom-input{
+  width: 95%;
+  border: none;
+  outline: none;
+}
+
+.icon-span{
+  cursor: pointer;
+}
+
+.tracker-box{
+  background-color: #386489;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.09em;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.tracker-box div{
+  margin: 5px 0;
+}
+
+.tracker-box .validated{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.list-icon{
+  margin-right: 8px;
+}
+
+.list-icon.green{
+  color: #0f0;
 }
